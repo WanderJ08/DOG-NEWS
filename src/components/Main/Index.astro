@@ -1,0 +1,32 @@
+---
+import New from '../Main/New.astro'
+const articleImages = [
+    "public/img/article-1.jpg",
+    "public/img/article-2.jpg",
+    "public/img/article-3.jpg",
+    "public/img/article-4.jpg",
+    "public/img/article-5.jpg",
+    "public/img/article-6.jpg"
+];
+
+const articleTitles = [
+    "This is why your dog doesn't want to play with you",
+    "All dogs can be friends, no matter the breed or size",
+    "My dog ​​doesn't want to be with me",
+    "This is why you should never take your dog into the snow",
+    "This is how dogs feel living among different breeds",
+    "Do dogs really understand what we say",
+];
+---
+
+<main class="p-4">
+		<div class="grid mt-4 md:grid-cols-3 max-w-6xl mx-auto lg:grid-cols-3 gap-4">
+		<New img=`${articleImages[0]}` category='Learning' title=`${articleTitles[0]}` name='Wander Jerez' date='Mar 24, 2024'/>
+        <New img=`${articleImages[1]}` category='Learning' title=`${articleTitles[1]}` name='Joan Elias' date='Mar 14, 2024'/>
+        <New img=`${articleImages[2]}` category='Experience' title=`${articleTitles[2]}` name='Jose Francisco' date='Mar 04, 2024'/>
+        <New img=`${articleImages[3]}` category='Warning' title=`${articleTitles[3]}` name='Milko Yawell' date='Feb 22, 2024'/>
+        <New img=`${articleImages[4]}` category='Experience' title=`${articleTitles[4]}` name='Esteban Manuel' date='Jan 13, 2024'/>
+        <New img=`${articleImages[5]}` category='Conspiracy' title=`${articleTitles[5]}` name='TheAnonimusGuy' date='Dec 24, 2023'/>
+
+		</div>
+	</main>
