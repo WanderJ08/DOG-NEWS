@@ -9,7 +9,7 @@ interface Props {
 const { img, category, title, name, date }= Astro.props;
 ---
 
-<article class="bg-white shadow rounded overflow-hidden flex flex-col ">
+<article class="bg-white hover:scale-105 transition shadow rounded overflow-hidden flex flex-col ">
     <div class="h-52">
         <img class="h-full w-full object-cover object-center" src={img} alt={title}/>
     </div>
