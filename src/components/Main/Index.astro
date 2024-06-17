@@ -1,12 +1,12 @@
 ---
 import New from '../Main/New.astro'
 const articleImages = [
-    "public/img/article-1.jpg",
-    "public/img/article-2.jpg",
-    "public/img/article-3.jpg",
-    "public/img/article-4.jpg",
-    "public/img/article-5.jpg",
-    "public/img/article-6.jpg"
+    "/public/img/article-1.jpg",
+    "/public/img/article-2.jpg",
+    "/public/img/article-3.jpg",
+    "/public/img/article-4.jpg",
+    "/public/img/article-5.jpg",
+    "/public/img/article-6.jpg"
 ];
 
 const articleTitles = [
@@ -27,6 +27,5 @@ const articleTitles = [
         <New img=`${articleImages[3]}` category='Warning' title=`${articleTitles[3]}` name='Milko Yawell' date='Feb 22, 2024'/>
         <New img=`${articleImages[4]}` category='Experience' title=`${articleTitles[4]}` name='Esteban Manuel' date='Jan 13, 2024'/>
         <New img=`${articleImages[5]}` category='Conspiracy' title=`${articleTitles[5]}` name='TheAnonimusGuy' date='Dec 24, 2023'/>
-
 		</div>
 	</main>
